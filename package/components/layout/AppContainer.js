@@ -1,41 +1,40 @@
 import React, { useState } from "react";
 
 // eslint-disable-next-line import/no-unresolved
-import { nativeUseLocation, NativeAppContainer } from "@wrappid/native";
-import { useDispatch, useSelector } from "react-redux";
-
-import CoreAppBar from "./../components/surfaces/CoreAppBar";
-import CoreDrawer from "./../components/surfaces/CoreDrawer";
-import CoreFooter from "./../components/surfaces/CoreFooter";
-import ComponentRegistry from "../registry/ComponentRegistry";
-import ErrorBoundary from "./../middleware/ErrorBoundary";
-import CoreRequestProgressBar from "../components/feedback/CoreRequestProgressBar";
 import {
+  ErrorBoundary,
   GET_ROLE_PERMISSIONS_API,
   GET_SETTINGS_META_API,
   GET_USER_SETTINGS,
   UPDATE_USER_SETTINGS
-} from "../config/api";
-import { HTTP, SMALL_WINDOW_WIDTH, userSettingsConstants } from "../config/constants";
+} from "@wrappid/core";
 import { CoreRouteRegistryContext } from "../config/contextHandler";
-import { apiRequestAction } from "../store/action/appActions";
-import { toggleLeftMenuState } from "../store/action/menuAction";
-import { GET_ROLE_PERMISSION_ERROR, GET_ROLE_PERMISSION_SUCCESS } from "../store/types/authTypes";
-import { BUILD_MENU_ROLE_PERMISSIONS } from "../store/types/menuTypes";
+import { nativeUseLocation, NativeAppContainer } from "@wrappid/native";
+import { useDispatch, useSelector } from "react-redux";
+
+import CoreAppBar from "./../surfaces/CoreAppBar";
+import CoreDrawer from "./../surfaces/CoreDrawer";
+import CoreFooter from "./../surfaces/CoreFooter";
+import CoreRequestProgressBar from "../feedback/CoreRequestProgressBar";
+import { HTTP, SMALL_WINDOW_WIDTH, userSettingsConstants } from "../config/constants";
+import ComponentRegistry from "../registry/ComponentRegistry";
 import {
+  apiRequestAction,
+  toggleLeftMenuState,
+  GET_ROLE_PERMISSION_ERROR,
+  GET_ROLE_PERMISSION_SUCCESS,
+  BUILD_MENU_ROLE_PERMISSIONS,
   REMOVE_PENDING_REQUESTS,
-  RECALL_TOKEN_REJUVINDATED
-} from "../store/types/pendingRequestTypes";
-import { SELECT_OPTION_SUCCESS } from "../store/types/selectOptionsTypes";
-import {
+  RECALL_TOKEN_REJUVINDATED,
+  SELECT_OPTION_SUCCESS,
   GET_SETTING_META_ERROR,
   GET_SETTING_META_SUCCESS,
   GET_USER_SETTINGS_ERROR,
   GET_USER_SETTINGS_SUCCESS,
   USER_SETTINGS_UPDATE_ERROR,
-  USER_SETTINGS_UPDATE_SUCCESS
-} from "../store/types/settingsTypes";
-import CoreClasses from "../styles/CoreClasses";
+  USER_SETTINGS_UPDATE_SUCCESS,
+  CoreClasses
+} from "../styles/CoreClasses";
 
 export let globalAccessToken = null;
 export let globalRefreshToken = null;
