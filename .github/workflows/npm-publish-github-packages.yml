@@ -128,7 +128,7 @@ jobs:
               body: |
                 Hi Wrappiders,
 
-                We have released ${{ needs.release_publish-gpr.outputs.version }} version of core package.
+                We have released ${{ needs.release_publish-gpr.outputs.version }} version of components package.
 
                 Thanks and Regards,
                 ${{github.actor}}
