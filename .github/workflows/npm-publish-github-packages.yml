@@ -46,7 +46,7 @@ jobs:
       - name: Print version
         run: echo ${{ steps.extract_version.outputs.version }}
 
-     - name: Get current IST date
+      - name: Get current IST date
         id: date
         run: echo "::set-output name=date::$(TZ='Asia/Kolkata' date +'%d %B %y')"
 
