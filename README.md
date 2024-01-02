@@ -1,1 +1,1 @@
-# Wrappid components package
+# Wrappid Components package
