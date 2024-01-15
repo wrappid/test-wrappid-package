@@ -1,6 +1,6 @@
 {
   "name": "@wrappid/components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Multi platform app components package",
   "main": "index.js",
   "scripts": {
