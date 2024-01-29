@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  get_input:
+  check_repository_status:
     runs-on: ubuntu-latest
     outputs:
       repo_stat: ${{ steps.set-repo_stat.outputs.repo_stat }}
@@ -20,7 +20,7 @@ jobs:
 
       - name: setup gh
         run: echo ${{secrets.GITHUB_TOKEN}} | gh auth login --with-token
-        
+
       - name: Repo commit message check
         id: repo-commit-message-check
         run: | 
@@ -32,13 +32,8 @@ jobs:
       - name: Generate output json
         id: generate
         run: |
-          if [ "${{ github.event.inputs.repo_names }}" -eq "" ]; then
-           input_repos=$(echo "core, native-web, native-mobile, styles" | sed 's/[^, ]\+/\\\"&\\\"/g')
-           echo "input_repos=$input_repos" >> "$GITHUB_ENV"
-          else 
            input_repos=$(echo "${{steps.repo-commit-message-check.outputs.repo_list_to_publish}}" | sed 's/[^, ]\+/\\\"&\\\"/g')
            echo "input_repos=$input_repos" >> "$GITHUB_ENV"
-          fi
 
       - name: Set repo names output
         id: set-matrix
@@ -103,7 +98,7 @@ jobs:
   job2:
     name: test-build
     runs-on: ubuntu-latest
-    needs: [get_input]
+    needs: [check_repository_status]
     if: needs.get_input.outputs.repo_stat == 'success'
     permissions: write-all
 
@@ -139,7 +134,7 @@ jobs:
   job3:
     name: checkout-build-publish
     runs-on: ubuntu-latest
-    needs: [job2,get_input]
+    needs: [job2,check_repository_status]
     if: always() && needs.job2.result == 'success'
     permissions: write-all
 #     outputs:
@@ -160,7 +155,7 @@ jobs:
           ls -al scripts
           rm -rf scripts
           ls -al
-          
+
       - name: Checkout
         uses: actions/checkout@v3
 
