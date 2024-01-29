@@ -142,8 +142,6 @@ jobs:
     needs: [job2,get_input]
     if: always() && needs.job2.result == 'success'
     permissions: write-all
-    strategy:
-      matrix: ${{fromJson(needs.get_input.outputs.matrix)}}
 #     outputs:
 #       ${{matrix.repo_names}}_result: ${{steps.lsdir.outputs.test}}
     # env:
