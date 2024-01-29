@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Change script permission
-        run: chmod +x main/.github/scripts/repo_commit_message_check.sh
+        run: chmod +x ./.github/scripts/repo_commit_message_check.sh
 
       - name: setup gh
         run: echo ${{secrets.PAT}} | gh auth login --with-token
