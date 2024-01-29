@@ -163,10 +163,7 @@ jobs:
           
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          path: main
 
-          
       - name: Setup Node Env
         uses: actions/setup-node@v3
         with:
