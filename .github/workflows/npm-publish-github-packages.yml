@@ -12,10 +12,8 @@ jobs:
       repo_stat: ${{ steps.set-repo_stat.outputs.repo_stat }}
       date: ${{ steps.date.outputs.date }}
     steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT }}
-          path: main
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Change script permission
         run: chmod +x main/.github/scripts/repo_commit_message_check.sh
