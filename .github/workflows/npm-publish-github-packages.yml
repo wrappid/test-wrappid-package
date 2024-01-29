@@ -24,7 +24,7 @@ jobs:
       - name: Repo commit message check
         id: repo-commit-message-check
         run: | 
-         bash main/.github/scripts/repo_commit_message_check.sh ${{ github.event.repository.name }}
+         bash ./.github/scripts/repo_commit_message_check.sh ${{ github.event.repository.name }}
          ls -al
          echo "repo_list_to_publish=$(tail -n 1 without_bump_version.txt)" >> "$GITHUB_OUTPUT"
          echo "repo_list_dont_publish=$(tail -n 1 with_bump_version.txt)" >> "$GITHUB_OUTPUT"
