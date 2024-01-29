@@ -266,7 +266,7 @@ jobs:
         run: |
           git pull
           git add ATTRIBUTIONS.md
-          git commit -m "${{ env.ATTRIBUTIONS_COMMIT_MESSAGE }}"
+          git commit -m "docs(global): :memo: update attribution" -m "update attributions content" -m "by Publish CI"
             
       - name: commit
         run: |
