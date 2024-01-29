@@ -175,7 +175,7 @@ jobs:
           token: ${{secrets.PUBLISH_TOKEN}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          path: ${{ matrix.repo_names }}
+          path:  ${{ github.event.repository.name }}
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_TOKEN}}
 
       - name: List Directories
@@ -198,7 +198,7 @@ jobs:
       #   run: bash .github/scripts/create_release.sh ${{secrets.GITHUB_TOKEN}} ${{ matrix.repo_names }} ${{ steps.extract_version.outputs.version }}
 
       - name: setup gh
-        run: echo ${{secrets.PAT}} | gh auth login --with-token
+        run: echo ${{secrets.GITHUB_TOKEN}} | gh auth login --with-token
 
       - name: Get tags
         run: git fetch --tags origin
@@ -207,7 +207,7 @@ jobs:
         run: git tag v${{ steps.extract_version.outputs.version }} && git push origin v${{ steps.extract_version.outputs.version }}
         
       - name: Generate Release notes
-        run: bash .github/scripts/release_notes.sh ${{ matrix.repo_names }}
+        run: bash .github/scripts/release_notes.sh ${{ github.event.repository.name }}
 
 
 # Release not releasing with proper name
@@ -215,7 +215,7 @@ jobs:
         id: create_release
         run: |
           gh config set prompt disabled
-          gh release create v${{ steps.extract_version.outputs.version }} -R wrappid/${{ matrix.repo_names }} --notes-file RELEASE_NOTES.md --title "v${{ steps.extract_version.outputs.version }}"
+          gh release create v${{ steps.extract_version.outputs.version }} -R wrappid/${{ github.event.repository.name }} --notes-file RELEASE_NOTES.md --title "v${{ steps.extract_version.outputs.version }}"
 
         # uses: softprops/action-gh-release@v1
         # with:
