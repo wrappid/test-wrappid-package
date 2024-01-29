@@ -4,6 +4,7 @@
   "description": "Multi platform app components package",
   "main": "index.js",
   "scripts": {
+    "attributions:gen": "node ./scripts/attributions.gen.js",
     "code:lint": "eslint --ignore-path .gitignore ./package",
     "code:format": "npm run code:lint --fix ./package",
     "test": "exit 0",
