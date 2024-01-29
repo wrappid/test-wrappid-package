@@ -236,6 +236,7 @@ jobs:
       - name: Generate ATTRIBUTIONS.md
         run: |
          npm run attributions:gen
+         chmod +x ./.github/scripts/attribution_header_adder.sh
          bash ./.github/scripts/attribution_header_adder.sh ${{ github.event.repository.name }}
 
       - name: Check Build
