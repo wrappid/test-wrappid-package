@@ -19,7 +19,7 @@ jobs:
         run: chmod +x ./.github/scripts/repo_commit_message_check.sh
 
       - name: setup gh
-        run: echo ${{secrets.PAT}} | gh auth login --with-token
+        run: echo ${{secrets.GITHUB_TOKEN}} | gh auth login --with-token
         
       - name: Repo commit message check
         id: repo-commit-message-check
