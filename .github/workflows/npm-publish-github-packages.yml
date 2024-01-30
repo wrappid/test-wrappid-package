@@ -218,13 +218,15 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Find TGZ file
-        id: find-file
+
+      - name: Find TGZ file name
+        id: find-tgz-file-name
         run: |
           # Find the generated TGZ file in the dist folder
-          TGZ_FILE=$(find . -name "*.tgz")
+          TGZ_FILE=$(find . -name "*.tgz" | sed 's|^\./||')
           echo "Found TGZ file: $TGZ_FILE"
           echo "::set-output name=tgz_file::$TGZ_FILE"
+
           
       - name: Upload Release Asset npm zip file
         id: upload-package-release-asset 
@@ -233,8 +235,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ${{ steps.find-file.outputs.tgz_file }}
-          asset_name: ${{ steps.find-file.outputs.tgz_file }}
+          asset_path: ./${{ steps.find-tgz-file-name.outputs.tgz_file }}
+          asset_name: ${{ steps.find-tgz-file-name.outputs.tgz_file }}
           asset_content_type: application/x-gzip
 
       - name: Bump Version
