@@ -120,6 +120,9 @@ jobs:
         run: |
           ls -l
 
+      - name: Install node modules
+        run: npm ci
+
       - name: Testing build ${{ github.event.repository.name }}
         run: npm run build
 
