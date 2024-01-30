@@ -4,7 +4,18 @@ on:
  # schedule:
  #   - cron: "30 8 * * *"
   workflow_dispatch:
-
+    inputs:
+      version_type:
+        type: choice
+        description: Who to greet
+        options: 
+        - major
+        - minor
+        - patch
+        - hotfix
+        - build
+        required: true
+        default: "build"
 jobs:
   check_repository_status:
     runs-on: ubuntu-latest
@@ -249,7 +260,7 @@ jobs:
 
       - name: Bump Version
         id: bump-version
-        run: echo "commit_message=$(bash .github/scripts/version_bump.sh)" >> "$GITHUB_OUTPUT"
+        run: echo "commit_message=$(bash .github/scripts/version_bump.sh ${{ github.event.inputs.version_type }})" >> "$GITHUB_OUTPUT"
         # env:
         #   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         env:
