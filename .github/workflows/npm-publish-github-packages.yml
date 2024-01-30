@@ -182,16 +182,6 @@ jobs:
          chmod +x ./.github/scripts/release_notes.sh
          bash ./.github/scripts/release_notes.sh ${{ github.event.repository.name }}
 
-
-      - name: Install zip
-        run: sudo apt install zip -y
-
-      - name: Zip build
-        run: |
-          cd dist
-          zip -r ${{ github.event.repository.name }}-v${{ steps.extract_version.outputs.version }}.zip *
-
-
         
       - name: Install node modules
         run: |
