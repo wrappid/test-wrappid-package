@@ -1,5 +1,5 @@
 ## ATTRIBUTIONS
-This file lists the third-party libraries, frameworks, and other components used in the components repository,<br />along with their respective licenses. <br />It is important to comply with the licensing terms of these components when using the code. <br />
+This file lists the third-party libraries, frameworks, and other components used in the test-wrappid-package repository,<br />along with their respective licenses. <br />It is important to comply with the licensing terms of these components when using the code. <br />
 <details>
   <summary>@aashutoshrathi/word-wrap@1.2.6</summary>
   
@@ -2889,14 +2889,14 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
-  <summary>@wrappid/components@0.0.10</summary>
+  <summary>@wrappid/test-wrappid-package@0.0.11</summary>
   
   #### Basic details about the package
   >|Key|Value|
   >|:--|:--|
-  >|**Name**|@wrappid/components@0.0.10|
-  >|**Version**|@0.0.10|
-  >|**Repository**|https://github.com/wrappid/components|
+  >|**Name**|@wrappid/test-wrappid-package@0.0.11|
+  >|**Version**|@0.0.11|
+  >|**Repository**|https://github.com/wrappid/test-wrappid-package|
   >|**Licenses**|UNKNOWN|
   >|**Publisher**|wrappid|
   >|**Contact**|NA|
@@ -2904,7 +2904,7 @@ This file lists the third-party libraries, frameworks, and other components used
   
   #### Use this package in your project
   ```bash
-  npm i @wrappid/components@0.0.10
+  npm i @wrappid/test-wrappid-package@0.0.11
   ```
   </details>
 <details>
@@ -3003,6 +3003,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>ansi-regex@2.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|ansi-regex@2.1.1|
+  >|**Version**|@2.1.1|
+  >|**Repository**|https://github.com/chalk/ansi-regex|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i ansi-regex@2.1.1
+  ```
+  </details>
+<details>
   <summary>ansi-regex@5.0.1</summary>
   
   #### Basic details about the package
@@ -3019,6 +3038,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i ansi-regex@5.0.1
+  ```
+  </details>
+<details>
+  <summary>ansi-styles@2.2.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|ansi-styles@2.2.1|
+  >|**Version**|@2.2.1|
+  >|**Repository**|https://github.com/chalk/ansi-styles|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i ansi-styles@2.2.1
   ```
   </details>
 <details>
@@ -3060,6 +3098,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>anymatch@1.3.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|anymatch@1.3.2|
+  >|**Version**|@1.3.2|
+  >|**Repository**|https://github.com/es128/anymatch|
+  >|**Licenses**|ISC|
+  >|**Publisher**|Elan Shanker|
+  >|**Contact**|NA|
+  >|**Homepage**|http://github.com/es128|
+  
+  #### Use this package in your project
+  ```bash
+  npm i anymatch@1.3.2
+  ```
+  </details>
+<details>
   <summary>anymatch@3.1.3</summary>
   
   #### Basic details about the package
@@ -3095,6 +3152,82 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i argparse@2.0.1
+  ```
+  </details>
+<details>
+  <summary>arr-diff@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|arr-diff@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/arr-diff|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i arr-diff@2.0.0
+  ```
+  </details>
+<details>
+  <summary>arr-diff@4.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|arr-diff@4.0.0|
+  >|**Version**|@4.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/arr-diff|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i arr-diff@4.0.0
+  ```
+  </details>
+<details>
+  <summary>arr-flatten@1.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|arr-flatten@1.1.0|
+  >|**Version**|@1.1.0|
+  >|**Repository**|https://github.com/jonschlinkert/arr-flatten|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i arr-flatten@1.1.0
+  ```
+  </details>
+<details>
+  <summary>arr-union@3.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|arr-union@3.1.0|
+  >|**Version**|@3.1.0|
+  >|**Repository**|https://github.com/jonschlinkert/arr-union|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i arr-union@3.1.0
   ```
   </details>
 <details>
@@ -3171,6 +3304,44 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i array-union@2.1.0
+  ```
+  </details>
+<details>
+  <summary>array-unique@0.2.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|array-unique@0.2.1|
+  >|**Version**|@0.2.1|
+  >|**Repository**|https://github.com/jonschlinkert/array-unique|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i array-unique@0.2.1
+  ```
+  </details>
+<details>
+  <summary>array-unique@0.3.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|array-unique@0.3.2|
+  >|**Version**|@0.3.2|
+  >|**Repository**|https://github.com/jonschlinkert/array-unique|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i array-unique@0.3.2
   ```
   </details>
 <details>
@@ -3288,6 +3459,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>assign-symbols@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|assign-symbols@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/assign-symbols|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i assign-symbols@1.0.0
+  ```
+  </details>
+<details>
+  <summary>async-each@1.0.6</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|async-each@1.0.6|
+  >|**Version**|@1.0.6|
+  >|**Repository**|https://github.com/paulmillr/async-each|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Paul Miller|
+  >|**Contact**|NA|
+  >|**Homepage**|https://paulmillr.com/|
+  
+  #### Use this package in your project
+  ```bash
+  npm i async-each@1.0.6
+  ```
+  </details>
+<details>
   <summary>asynciterator.prototype@1.0.0</summary>
   
   #### Basic details about the package
@@ -3307,6 +3516,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>atob@2.1.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|atob@2.1.2|
+  >|**Version**|@2.1.2|
+  >|**Repository**|git://git.coolaj86.com/coolaj86/atob.js|
+  >|**Licenses**|(MIT OR Apache-2.0)|
+  >|**Publisher**|AJ ONeal|
+  >|**Contact**|coolaj86@gmail.com|
+  >|**Homepage**|https://coolaj86.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i atob@2.1.2
+  ```
+  </details>
+<details>
   <summary>available-typed-arrays@1.0.5</summary>
   
   #### Basic details about the package
@@ -3323,6 +3551,120 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i available-typed-arrays@1.0.5
+  ```
+  </details>
+<details>
+  <summary>babel-cli@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-cli@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-cli|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-cli@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-code-frame@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-code-frame@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-code-frame|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-code-frame@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-core@6.26.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-core@6.26.3|
+  >|**Version**|@6.26.3|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-core|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-core@6.26.3
+  ```
+  </details>
+<details>
+  <summary>babel-generator@6.26.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-generator@6.26.1|
+  >|**Version**|@6.26.1|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-generator|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-generator@6.26.1
+  ```
+  </details>
+<details>
+  <summary>babel-helpers@6.24.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-helpers@6.24.1|
+  >|**Version**|@6.24.1|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-helpers|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-helpers@6.24.1
+  ```
+  </details>
+<details>
+  <summary>babel-messages@6.23.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-messages@6.23.0|
+  >|**Version**|@6.23.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-messages|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-messages@6.23.0
   ```
   </details>
 <details>
@@ -3383,6 +3725,139 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>babel-polyfill@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-polyfill@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-polyfill|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-polyfill@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-register@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-register@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-register|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-register@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-runtime@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-runtime@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-runtime|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-runtime@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-template@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-template@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-template|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-template@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-traverse@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-traverse@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-traverse|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-traverse@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babel-types@6.26.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babel-types@6.26.0|
+  >|**Version**|@6.26.0|
+  >|**Repository**|https://github.com/babel/babel/tree/master/packages/babel-types|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babel-types@6.26.0
+  ```
+  </details>
+<details>
+  <summary>babylon@6.18.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|babylon@6.18.0|
+  >|**Version**|@6.18.0|
+  >|**Repository**|https://github.com/babel/babylon|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sebastian McKenzie|
+  >|**Contact**|sebmck@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i babylon@6.18.0
+  ```
+  </details>
+<details>
   <summary>balanced-match@1.0.2</summary>
   
   #### Basic details about the package
@@ -3399,6 +3874,44 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i balanced-match@1.0.2
+  ```
+  </details>
+<details>
+  <summary>base@0.11.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|base@0.11.2|
+  >|**Version**|@0.11.2|
+  >|**Repository**|https://github.com/node-base/base|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i base@0.11.2
+  ```
+  </details>
+<details>
+  <summary>binary-extensions@1.13.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|binary-extensions@1.13.1|
+  >|**Version**|@1.13.1|
+  >|**Repository**|https://github.com/sindresorhus/binary-extensions|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i binary-extensions@1.13.1
   ```
   </details>
 <details>
@@ -3440,6 +3953,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>braces@1.8.5</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|braces@1.8.5|
+  >|**Version**|@1.8.5|
+  >|**Repository**|https://github.com/jonschlinkert/braces|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i braces@1.8.5
+  ```
+  </details>
+<details>
+  <summary>braces@2.3.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|braces@2.3.2|
+  >|**Version**|@2.3.2|
+  >|**Repository**|https://github.com/micromatch/braces|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i braces@2.3.2
+  ```
+  </details>
+<details>
   <summary>braces@3.0.2</summary>
   
   #### Basic details about the package
@@ -3475,6 +4026,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i browserslist@4.22.2
+  ```
+  </details>
+<details>
+  <summary>cache-base@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|cache-base@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/cache-base|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i cache-base@1.0.1
   ```
   </details>
 <details>
@@ -3535,6 +4105,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>chalk@1.1.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|chalk@1.1.3|
+  >|**Version**|@1.1.3|
+  >|**Repository**|https://github.com/chalk/chalk|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i chalk@1.1.3
+  ```
+  </details>
+<details>
   <summary>chalk@2.4.2</summary>
   
   #### Basic details about the package
@@ -3573,6 +4162,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>chokidar@1.7.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|chokidar@1.7.0|
+  >|**Version**|@1.7.0|
+  >|**Repository**|https://github.com/paulmillr/chokidar|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Paul Miller|
+  >|**Contact**|NA|
+  >|**Homepage**|http://paulmillr.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i chokidar@1.7.0
+  ```
+  </details>
+<details>
   <summary>chokidar@3.5.3</summary>
   
   #### Basic details about the package
@@ -3592,6 +4200,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>class-utils@0.3.6</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|class-utils@0.3.6|
+  >|**Version**|@0.3.6|
+  >|**Repository**|https://github.com/jonschlinkert/class-utils|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i class-utils@0.3.6
+  ```
+  </details>
+<details>
   <summary>cliui@8.0.1</summary>
   
   #### Basic details about the package
@@ -3608,6 +4235,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i cliui@8.0.1
+  ```
+  </details>
+<details>
+  <summary>collection-visit@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|collection-visit@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/collection-visit|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i collection-visit@1.0.0
   ```
   </details>
 <details>
@@ -3687,6 +4333,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>commander@2.20.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|commander@2.20.3|
+  >|**Version**|@2.20.3|
+  >|**Repository**|https://github.com/tj/commander.js|
+  >|**Licenses**|MIT|
+  >|**Publisher**|TJ Holowaychuk|
+  >|**Contact**|tj@vision-media.ca|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i commander@2.20.3
+  ```
+  </details>
+<details>
   <summary>commander@4.1.1</summary>
   
   #### Basic details about the package
@@ -3703,6 +4368,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i commander@4.1.1
+  ```
+  </details>
+<details>
+  <summary>component-emitter@1.3.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|component-emitter@1.3.1|
+  >|**Version**|@1.3.1|
+  >|**Repository**|https://github.com/sindresorhus/component-emitter|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i component-emitter@1.3.1
   ```
   </details>
 <details>
@@ -3725,6 +4409,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>convert-source-map@1.9.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|convert-source-map@1.9.0|
+  >|**Version**|@1.9.0|
+  >|**Repository**|https://github.com/thlorenz/convert-source-map|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Thorsten Lorenz|
+  >|**Contact**|thlorenz@gmx.de|
+  >|**Homepage**|http://thlorenz.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i convert-source-map@1.9.0
+  ```
+  </details>
+<details>
   <summary>convert-source-map@2.0.0</summary>
   
   #### Basic details about the package
@@ -3741,6 +4444,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i convert-source-map@2.0.0
+  ```
+  </details>
+<details>
+  <summary>copy-descriptor@0.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|copy-descriptor@0.1.1|
+  >|**Version**|@0.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/copy-descriptor|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i copy-descriptor@0.1.1
   ```
   </details>
 <details>
@@ -3782,6 +4504,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>core-util-is@1.0.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|core-util-is@1.0.3|
+  >|**Version**|@1.0.3|
+  >|**Repository**|https://github.com/isaacs/core-util-is|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Isaac Z. Schlueter|
+  >|**Contact**|i@izs.me|
+  >|**Homepage**|http://blog.izs.me/|
+  
+  #### Use this package in your project
+  ```bash
+  npm i core-util-is@1.0.3
+  ```
+  </details>
+<details>
   <summary>cross-spawn@7.0.3</summary>
   
   #### Basic details about the package
@@ -3817,6 +4558,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i csstype@3.1.3
+  ```
+  </details>
+<details>
+  <summary>debug@2.6.9</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|debug@2.6.9|
+  >|**Version**|@2.6.9|
+  >|**Repository**|https://github.com/visionmedia/debug|
+  >|**Licenses**|MIT|
+  >|**Publisher**|TJ Holowaychuk|
+  >|**Contact**|tj@vision-media.ca|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i debug@2.6.9
   ```
   </details>
 <details>
@@ -3874,6 +4634,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i debuglog@1.0.1
+  ```
+  </details>
+<details>
+  <summary>decode-uri-component@0.2.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|decode-uri-component@0.2.2|
+  >|**Version**|@0.2.2|
+  >|**Repository**|https://github.com/SamVerschueren/decode-uri-component|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sam Verschueren|
+  >|**Contact**|sam.verschueren@gmail.com|
+  >|**Homepage**|github.com/SamVerschueren|
+  
+  #### Use this package in your project
+  ```bash
+  npm i decode-uri-component@0.2.2
   ```
   </details>
 <details>
@@ -3950,6 +4729,82 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i define-properties@1.2.1
+  ```
+  </details>
+<details>
+  <summary>define-property@0.2.5</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|define-property@0.2.5|
+  >|**Version**|@0.2.5|
+  >|**Repository**|https://github.com/jonschlinkert/define-property|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i define-property@0.2.5
+  ```
+  </details>
+<details>
+  <summary>define-property@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|define-property@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/define-property|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i define-property@1.0.0
+  ```
+  </details>
+<details>
+  <summary>define-property@2.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|define-property@2.0.2|
+  >|**Version**|@2.0.2|
+  >|**Repository**|https://github.com/jonschlinkert/define-property|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i define-property@2.0.2
+  ```
+  </details>
+<details>
+  <summary>detect-indent@4.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|detect-indent@4.0.0|
+  >|**Version**|@4.0.0|
+  >|**Repository**|https://github.com/sindresorhus/detect-indent|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i detect-indent@4.0.0
   ```
   </details>
 <details>
@@ -4618,6 +5473,139 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>expand-brackets@0.1.5</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|expand-brackets@0.1.5|
+  >|**Version**|@0.1.5|
+  >|**Repository**|https://github.com/jonschlinkert/expand-brackets|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i expand-brackets@0.1.5
+  ```
+  </details>
+<details>
+  <summary>expand-brackets@2.1.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|expand-brackets@2.1.4|
+  >|**Version**|@2.1.4|
+  >|**Repository**|https://github.com/jonschlinkert/expand-brackets|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i expand-brackets@2.1.4
+  ```
+  </details>
+<details>
+  <summary>expand-range@1.8.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|expand-range@1.8.2|
+  >|**Version**|@1.8.2|
+  >|**Repository**|https://github.com/jonschlinkert/expand-range|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i expand-range@1.8.2
+  ```
+  </details>
+<details>
+  <summary>extend-shallow@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|extend-shallow@2.0.1|
+  >|**Version**|@2.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/extend-shallow|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i extend-shallow@2.0.1
+  ```
+  </details>
+<details>
+  <summary>extend-shallow@3.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|extend-shallow@3.0.2|
+  >|**Version**|@3.0.2|
+  >|**Repository**|https://github.com/jonschlinkert/extend-shallow|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i extend-shallow@3.0.2
+  ```
+  </details>
+<details>
+  <summary>extglob@0.3.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|extglob@0.3.2|
+  >|**Version**|@0.3.2|
+  >|**Repository**|https://github.com/jonschlinkert/extglob|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i extglob@0.3.2
+  ```
+  </details>
+<details>
+  <summary>extglob@2.0.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|extglob@2.0.4|
+  >|**Version**|@2.0.4|
+  >|**Repository**|https://github.com/micromatch/extglob|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i extglob@2.0.4
+  ```
+  </details>
+<details>
   <summary>fast-deep-equal@3.1.3</summary>
   
   #### Basic details about the package
@@ -4732,6 +5720,63 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>filename-regex@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|filename-regex@2.0.1|
+  >|**Version**|@2.0.1|
+  >|**Repository**|https://github.com/regexhq/filename-regex|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i filename-regex@2.0.1
+  ```
+  </details>
+<details>
+  <summary>fill-range@2.2.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|fill-range@2.2.4|
+  >|**Version**|@2.2.4|
+  >|**Repository**|https://github.com/jonschlinkert/fill-range|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i fill-range@2.2.4
+  ```
+  </details>
+<details>
+  <summary>fill-range@4.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|fill-range@4.0.0|
+  >|**Version**|@4.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/fill-range|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i fill-range@4.0.0
+  ```
+  </details>
+<details>
   <summary>fill-range@7.0.1</summary>
   
   #### Basic details about the package
@@ -4827,6 +5872,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>for-in@1.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|for-in@1.0.2|
+  >|**Version**|@1.0.2|
+  >|**Repository**|https://github.com/jonschlinkert/for-in|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i for-in@1.0.2
+  ```
+  </details>
+<details>
+  <summary>for-own@0.1.5</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|for-own@0.1.5|
+  >|**Version**|@0.1.5|
+  >|**Repository**|https://github.com/jonschlinkert/for-own|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i for-own@0.1.5
+  ```
+  </details>
+<details>
   <summary>formik@2.4.5</summary>
   
   #### Basic details about the package
@@ -4843,6 +5926,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i formik@2.4.5
+  ```
+  </details>
+<details>
+  <summary>fragment-cache@0.2.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|fragment-cache@0.2.1|
+  >|**Version**|@0.2.1|
+  >|**Repository**|https://github.com/jonschlinkert/fragment-cache|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i fragment-cache@0.2.1
   ```
   </details>
 <details>
@@ -5017,6 +6119,63 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>get-value@2.0.6</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|get-value@2.0.6|
+  >|**Version**|@2.0.6|
+  >|**Repository**|https://github.com/jonschlinkert/get-value|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i get-value@2.0.6
+  ```
+  </details>
+<details>
+  <summary>glob-base@0.3.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|glob-base@0.3.0|
+  >|**Version**|@0.3.0|
+  >|**Repository**|https://github.com/jonschlinkert/glob-base|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i glob-base@0.3.0
+  ```
+  </details>
+<details>
+  <summary>glob-parent@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|glob-parent@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/es128/glob-parent|
+  >|**Licenses**|ISC|
+  >|**Publisher**|Elan Shanker|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i glob-parent@2.0.0
+  ```
+  </details>
+<details>
   <summary>glob-parent@5.1.2</summary>
   
   #### Basic details about the package
@@ -5112,6 +6271,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>globals@9.18.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|globals@9.18.0|
+  >|**Version**|@9.18.0|
+  >|**Repository**|https://github.com/sindresorhus/globals|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|http://sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i globals@9.18.0
+  ```
+  </details>
+<details>
   <summary>globalthis@1.0.3</summary>
   
   #### Basic details about the package
@@ -5204,6 +6382,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i graphemer@1.4.0
+  ```
+  </details>
+<details>
+  <summary>has-ansi@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|has-ansi@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/sindresorhus/has-ansi|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i has-ansi@2.0.0
   ```
   </details>
 <details>
@@ -5340,6 +6537,82 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>has-value@0.3.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|has-value@0.3.1|
+  >|**Version**|@0.3.1|
+  >|**Repository**|https://github.com/jonschlinkert/has-value|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i has-value@0.3.1
+  ```
+  </details>
+<details>
+  <summary>has-value@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|has-value@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/has-value|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i has-value@1.0.0
+  ```
+  </details>
+<details>
+  <summary>has-values@0.1.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|has-values@0.1.4|
+  >|**Version**|@0.1.4|
+  >|**Repository**|https://github.com/jonschlinkert/has-values|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i has-values@0.1.4
+  ```
+  </details>
+<details>
+  <summary>has-values@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|has-values@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/has-values|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i has-values@1.0.0
+  ```
+  </details>
+<details>
   <summary>hasown@2.0.0</summary>
   
   #### Basic details about the package
@@ -5375,6 +6648,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i hoist-non-react-statics@3.3.2
+  ```
+  </details>
+<details>
+  <summary>home-or-tmp@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|home-or-tmp@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/sindresorhus/home-or-tmp|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i home-or-tmp@2.0.0
   ```
   </details>
 <details>
@@ -5530,6 +6822,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>invariant@2.2.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|invariant@2.2.4|
+  >|**Version**|@2.2.4|
+  >|**Repository**|https://github.com/zertosh/invariant|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Andres Suarez|
+  >|**Contact**|zertosh@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i invariant@2.2.4
+  ```
+  </details>
+<details>
+  <summary>is-accessor-descriptor@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-accessor-descriptor@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/inspect-js/is-accessor-descriptor|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-accessor-descriptor@1.0.1
+  ```
+  </details>
+<details>
   <summary>is-array-buffer@3.0.2</summary>
   
   #### Basic details about the package
@@ -5587,6 +6917,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>is-binary-path@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-binary-path@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/sindresorhus/is-binary-path|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-binary-path@1.0.1
+  ```
+  </details>
+<details>
   <summary>is-binary-path@2.1.0</summary>
   
   #### Basic details about the package
@@ -5622,6 +6971,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i is-boolean-object@1.1.2
+  ```
+  </details>
+<details>
+  <summary>is-buffer@1.1.6</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-buffer@1.1.6|
+  >|**Version**|@1.1.6|
+  >|**Repository**|https://github.com/feross/is-buffer|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Feross Aboukhadijeh|
+  >|**Contact**|feross@feross.org|
+  >|**Homepage**|http://feross.org/|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-buffer@1.1.6
   ```
   </details>
 <details>
@@ -5663,6 +7031,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>is-data-descriptor@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-data-descriptor@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/inspect-js/is-data-descriptor|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-data-descriptor@1.0.1
+  ```
+  </details>
+<details>
   <summary>is-date-object@1.0.5</summary>
   
   #### Basic details about the package
@@ -5679,6 +7066,139 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i is-date-object@1.0.5
+  ```
+  </details>
+<details>
+  <summary>is-descriptor@0.1.7</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-descriptor@0.1.7|
+  >|**Version**|@0.1.7|
+  >|**Repository**|https://github.com/inspect-js/is-descriptor|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-descriptor@0.1.7
+  ```
+  </details>
+<details>
+  <summary>is-descriptor@1.0.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-descriptor@1.0.3|
+  >|**Version**|@1.0.3|
+  >|**Repository**|https://github.com/inspect-js/is-descriptor|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-descriptor@1.0.3
+  ```
+  </details>
+<details>
+  <summary>is-dotfile@1.0.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-dotfile@1.0.3|
+  >|**Version**|@1.0.3|
+  >|**Repository**|https://github.com/jonschlinkert/is-dotfile|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-dotfile@1.0.3
+  ```
+  </details>
+<details>
+  <summary>is-equal-shallow@0.1.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-equal-shallow@0.1.3|
+  >|**Version**|@0.1.3|
+  >|**Repository**|https://github.com/jonschlinkert/is-equal-shallow|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-equal-shallow@0.1.3
+  ```
+  </details>
+<details>
+  <summary>is-extendable@0.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-extendable@0.1.1|
+  >|**Version**|@0.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/is-extendable|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-extendable@0.1.1
+  ```
+  </details>
+<details>
+  <summary>is-extendable@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-extendable@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/is-extendable|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-extendable@1.0.1
+  ```
+  </details>
+<details>
+  <summary>is-extglob@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-extglob@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/is-extglob|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-extglob@1.0.0
   ```
   </details>
 <details>
@@ -5720,6 +7240,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>is-finite@1.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-finite@1.1.0|
+  >|**Version**|@1.1.0|
+  >|**Repository**|https://github.com/sindresorhus/is-finite|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-finite@1.1.0
+  ```
+  </details>
+<details>
   <summary>is-fullwidth-code-point@3.0.0</summary>
   
   #### Basic details about the package
@@ -5755,6 +7294,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i is-generator-function@1.0.10
+  ```
+  </details>
+<details>
+  <summary>is-glob@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-glob@2.0.1|
+  >|**Version**|@2.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/is-glob|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-glob@2.0.1
   ```
   </details>
 <details>
@@ -5834,6 +7392,63 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>is-number@2.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-number@2.1.0|
+  >|**Version**|@2.1.0|
+  >|**Repository**|https://github.com/jonschlinkert/is-number|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-number@2.1.0
+  ```
+  </details>
+<details>
+  <summary>is-number@3.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-number@3.0.0|
+  >|**Version**|@3.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/is-number|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-number@3.0.0
+  ```
+  </details>
+<details>
+  <summary>is-number@4.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-number@4.0.0|
+  >|**Version**|@4.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/is-number|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-number@4.0.0
+  ```
+  </details>
+<details>
   <summary>is-number@7.0.0</summary>
   
   #### Basic details about the package
@@ -5869,6 +7484,63 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i is-path-inside@3.0.3
+  ```
+  </details>
+<details>
+  <summary>is-plain-object@2.0.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-plain-object@2.0.4|
+  >|**Version**|@2.0.4|
+  >|**Repository**|https://github.com/jonschlinkert/is-plain-object|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-plain-object@2.0.4
+  ```
+  </details>
+<details>
+  <summary>is-posix-bracket@0.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-posix-bracket@0.1.1|
+  >|**Version**|@0.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/is-posix-bracket|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-posix-bracket@0.1.1
+  ```
+  </details>
+<details>
+  <summary>is-primitive@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-primitive@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/is-primitive|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-primitive@2.0.0
   ```
   </details>
 <details>
@@ -6043,6 +7715,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>is-windows@1.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|is-windows@1.0.2|
+  >|**Version**|@1.0.2|
+  >|**Repository**|https://github.com/jonschlinkert/is-windows|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i is-windows@1.0.2
+  ```
+  </details>
+<details>
+  <summary>isarray@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|isarray@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/juliangruber/isarray|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Julian Gruber|
+  >|**Contact**|mail@juliangruber.com|
+  >|**Homepage**|http://juliangruber.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i isarray@1.0.0
+  ```
+  </details>
+<details>
   <summary>isarray@2.0.5</summary>
   
   #### Basic details about the package
@@ -6081,6 +7791,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>isobject@2.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|isobject@2.1.0|
+  >|**Version**|@2.1.0|
+  >|**Repository**|https://github.com/jonschlinkert/isobject|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i isobject@2.1.0
+  ```
+  </details>
+<details>
+  <summary>isobject@3.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|isobject@3.0.1|
+  >|**Version**|@3.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/isobject|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i isobject@3.0.1
+  ```
+  </details>
+<details>
   <summary>iterator.prototype@1.1.2</summary>
   
   #### Basic details about the package
@@ -6097,6 +7845,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i iterator.prototype@1.1.2
+  ```
+  </details>
+<details>
+  <summary>js-tokens@3.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|js-tokens@3.0.2|
+  >|**Version**|@3.0.2|
+  >|**Repository**|https://github.com/lydell/js-tokens|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Simon Lydell|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i js-tokens@3.0.2
   ```
   </details>
 <details>
@@ -6154,6 +7921,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i jsesc@0.5.0
+  ```
+  </details>
+<details>
+  <summary>jsesc@1.3.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|jsesc@1.3.0|
+  >|**Version**|@1.3.0|
+  >|**Repository**|https://github.com/mathiasbynens/jsesc|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Mathias Bynens|
+  >|**Contact**|NA|
+  >|**Homepage**|https://mathiasbynens.be/|
+  
+  #### Use this package in your project
+  ```bash
+  npm i jsesc@1.3.0
   ```
   </details>
 <details>
@@ -6252,6 +8038,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>json5@0.5.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|json5@0.5.1|
+  >|**Version**|@50.5.1|
+  >|**Repository**|https://github.com/aseemk/json5|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Aseem Kishore|
+  >|**Contact**|aseem.kishore@gmail.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i json5@0.5.1
+  ```
+  </details>
+<details>
   <summary>json5@1.0.2</summary>
   
   #### Basic details about the package
@@ -6325,6 +8130,63 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i keyv@4.5.4
+  ```
+  </details>
+<details>
+  <summary>kind-of@3.2.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|kind-of@3.2.2|
+  >|**Version**|@3.2.2|
+  >|**Repository**|https://github.com/jonschlinkert/kind-of|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i kind-of@3.2.2
+  ```
+  </details>
+<details>
+  <summary>kind-of@4.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|kind-of@4.0.0|
+  >|**Version**|@4.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/kind-of|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i kind-of@4.0.0
+  ```
+  </details>
+<details>
+  <summary>kind-of@6.0.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|kind-of@6.0.3|
+  >|**Version**|@6.0.3|
+  >|**Repository**|https://github.com/jonschlinkert/kind-of|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i kind-of@6.0.3
   ```
   </details>
 <details>
@@ -6537,6 +8399,63 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>map-cache@0.2.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|map-cache@0.2.2|
+  >|**Version**|@0.2.2|
+  >|**Repository**|https://github.com/jonschlinkert/map-cache|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i map-cache@0.2.2
+  ```
+  </details>
+<details>
+  <summary>map-visit@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|map-visit@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/map-visit|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i map-visit@1.0.0
+  ```
+  </details>
+<details>
+  <summary>math-random@1.0.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|math-random@1.0.4|
+  >|**Version**|@1.0.4|
+  >|**Repository**|https://github.com/michaelrhodes/math-random|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Michael Rhodes|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i math-random@1.0.4
+  ```
+  </details>
+<details>
   <summary>merge2@1.4.1</summary>
   
   #### Basic details about the package
@@ -6553,6 +8472,44 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i merge2@1.4.1
+  ```
+  </details>
+<details>
+  <summary>micromatch@2.3.11</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|micromatch@2.3.11|
+  >|**Version**|@2.3.11|
+  >|**Repository**|https://github.com/jonschlinkert/micromatch|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i micromatch@2.3.11
+  ```
+  </details>
+<details>
+  <summary>micromatch@3.1.10</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|micromatch@3.1.10|
+  >|**Version**|@3.1.10|
+  >|**Repository**|https://github.com/micromatch/micromatch|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i micromatch@3.1.10
   ```
   </details>
 <details>
@@ -6613,6 +8570,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>mixin-deep@1.3.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|mixin-deep@1.3.2|
+  >|**Version**|@1.3.2|
+  >|**Repository**|https://github.com/jonschlinkert/mixin-deep|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i mixin-deep@1.3.2
+  ```
+  </details>
+<details>
   <summary>mkdirp@0.5.6</summary>
   
   #### Basic details about the package
@@ -6651,6 +8627,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>ms@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|ms@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/zeit/ms|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i ms@2.0.0
+  ```
+  </details>
+<details>
   <summary>ms@2.1.2</summary>
   
   #### Basic details about the package
@@ -6667,6 +8662,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i ms@2.1.2
+  ```
+  </details>
+<details>
+  <summary>nanomatch@1.2.13</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|nanomatch@1.2.13|
+  >|**Version**|@1.2.13|
+  >|**Repository**|https://github.com/micromatch/nanomatch|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i nanomatch@1.2.13
   ```
   </details>
 <details>
@@ -6746,6 +8760,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>normalize-path@2.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|normalize-path@2.1.1|
+  >|**Version**|@2.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/normalize-path|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i normalize-path@2.1.1
+  ```
+  </details>
+<details>
   <summary>normalize-path@3.0.0</summary>
   
   #### Basic details about the package
@@ -6803,6 +8836,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>object-copy@0.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|object-copy@0.1.0|
+  >|**Version**|@0.1.0|
+  >|**Repository**|https://github.com/jonschlinkert/object-copy|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i object-copy@0.1.0
+  ```
+  </details>
+<details>
   <summary>object-inspect@1.13.1</summary>
   
   #### Basic details about the package
@@ -6838,6 +8890,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i object-keys@1.1.1
+  ```
+  </details>
+<details>
+  <summary>object-visit@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|object-visit@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/object-visit|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i object-visit@1.0.1
   ```
   </details>
 <details>
@@ -6933,6 +9004,44 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i object.hasown@1.1.3
+  ```
+  </details>
+<details>
+  <summary>object.omit@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|object.omit@2.0.1|
+  >|**Version**|@.2.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/object.omit|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i object.omit@2.0.1
+  ```
+  </details>
+<details>
+  <summary>object.pick@1.3.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|object.pick@1.3.0|
+  >|**Version**|@.1.3.0|
+  >|**Repository**|https://github.com/jonschlinkert/object.pick|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i object.pick@1.3.0
   ```
   </details>
 <details>
@@ -7050,6 +9159,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>output-file-sync@1.1.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|output-file-sync@1.1.2|
+  >|**Version**|@1.1.2|
+  >|**Repository**|https://github.com/shinnn/output-file-sync|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Shinnosuke Watanabe|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/shinnn|
+  
+  #### Use this package in your project
+  ```bash
+  npm i output-file-sync@1.1.2
+  ```
+  </details>
+<details>
   <summary>p-limit@3.1.0</summary>
   
   #### Basic details about the package
@@ -7104,6 +9232,44 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i parent-module@1.0.1
+  ```
+  </details>
+<details>
+  <summary>parse-glob@3.0.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|parse-glob@3.0.4|
+  >|**Version**|@3.0.4|
+  >|**Repository**|https://github.com/jonschlinkert/parse-glob|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i parse-glob@3.0.4
+  ```
+  </details>
+<details>
+  <summary>pascalcase@0.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|pascalcase@0.1.1|
+  >|**Version**|@0.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/pascalcase|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i pascalcase@0.1.1
   ```
   </details>
 <details>
@@ -7259,6 +9425,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>posix-character-classes@0.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|posix-character-classes@0.1.1|
+  >|**Version**|@0.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/posix-character-classes|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i posix-character-classes@0.1.1
+  ```
+  </details>
+<details>
   <summary>prelude-ls@1.2.1</summary>
   
   #### Basic details about the package
@@ -7275,6 +9460,63 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i prelude-ls@1.2.1
+  ```
+  </details>
+<details>
+  <summary>preserve@0.2.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|preserve@0.2.0|
+  >|**Version**|@0.2.0|
+  >|**Repository**|https://github.com/jonschlinkert/preserve|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i preserve@0.2.0
+  ```
+  </details>
+<details>
+  <summary>private@0.1.8</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|private@0.1.8|
+  >|**Version**|@0.1.8|
+  >|**Repository**|https://github.com/benjamn/private|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Ben Newman|
+  >|**Contact**|bn@cs.stanford.edu|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i private@0.1.8
+  ```
+  </details>
+<details>
+  <summary>process-nextick-args@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|process-nextick-args@2.0.1|
+  >|**Version**|@2.0.1|
+  >|**Repository**|https://github.com/calvinmetcalf/process-nextick-args|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i process-nextick-args@2.0.1
   ```
   </details>
 <details>
@@ -7351,6 +9593,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i queue-microtask@1.2.3
+  ```
+  </details>
+<details>
+  <summary>randomatic@3.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|randomatic@3.1.1|
+  >|**Version**|@3.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/randomatic|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i randomatic@3.1.1
   ```
   </details>
 <details>
@@ -7525,6 +9786,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>readable-stream@2.3.8</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|readable-stream@2.3.8|
+  >|**Version**|@2.3.8|
+  >|**Repository**|https://github.com/nodejs/readable-stream|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i readable-stream@2.3.8
+  ```
+  </details>
+<details>
   <summary>readdir-scoped-modules@1.1.0</summary>
   
   #### Basic details about the package
@@ -7541,6 +9821,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i readdir-scoped-modules@1.1.0
+  ```
+  </details>
+<details>
+  <summary>readdirp@2.2.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|readdirp@2.2.1|
+  >|**Version**|@2.2.1|
+  >|**Repository**|https://github.com/paulmillr/readdirp|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Thorsten Lorenz|
+  >|**Contact**|thlorenz@gmx.de|
+  >|**Homepage**|thlorenz.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i readdirp@2.2.1
   ```
   </details>
 <details>
@@ -7658,6 +9957,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>regenerator-runtime@0.10.5</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|regenerator-runtime@0.10.5|
+  >|**Version**|@0.10.5|
+  >|**Repository**|https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Ben Newman|
+  >|**Contact**|bn@cs.stanford.edu|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i regenerator-runtime@0.10.5
+  ```
+  </details>
+<details>
+  <summary>regenerator-runtime@0.11.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|regenerator-runtime@0.11.1|
+  >|**Version**|@0.11.1|
+  >|**Repository**|https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Ben Newman|
+  >|**Contact**|bn@cs.stanford.edu|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i regenerator-runtime@0.11.1
+  ```
+  </details>
+<details>
   <summary>regenerator-runtime@0.13.11</summary>
   
   #### Basic details about the package
@@ -7715,6 +10052,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>regex-cache@0.4.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|regex-cache@0.4.4|
+  >|**Version**|@0.4.4|
+  >|**Repository**|https://github.com/jonschlinkert/regex-cache|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i regex-cache@0.4.4
+  ```
+  </details>
+<details>
+  <summary>regex-not@1.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|regex-not@1.0.2|
+  >|**Version**|@1.0.2|
+  >|**Repository**|https://github.com/jonschlinkert/regex-not|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i regex-not@1.0.2
+  ```
+  </details>
+<details>
   <summary>regexp.prototype.flags@1.5.1</summary>
   
   #### Basic details about the package
@@ -7769,6 +10144,82 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i regjsparser@0.9.1
+  ```
+  </details>
+<details>
+  <summary>remove-trailing-separator@1.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|remove-trailing-separator@1.1.0|
+  >|**Version**|@1.1.0|
+  >|**Repository**|https://github.com/darsain/remove-trailing-separator|
+  >|**Licenses**|ISC|
+  >|**Publisher**|darsain|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i remove-trailing-separator@1.1.0
+  ```
+  </details>
+<details>
+  <summary>repeat-element@1.1.4</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|repeat-element@1.1.4|
+  >|**Version**|@1.1.4|
+  >|**Repository**|https://github.com/jonschlinkert/repeat-element|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i repeat-element@1.1.4
+  ```
+  </details>
+<details>
+  <summary>repeat-string@1.6.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|repeat-string@1.6.1|
+  >|**Version**|@1.6.1|
+  >|**Repository**|https://github.com/jonschlinkert/repeat-string|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|http://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i repeat-string@1.6.1
+  ```
+  </details>
+<details>
+  <summary>repeating@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|repeating@2.0.1|
+  >|**Version**|@2.0.1|
+  >|**Repository**|https://github.com/sindresorhus/repeating|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i repeating@2.0.1
   ```
   </details>
 <details>
@@ -7848,6 +10299,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>resolve-url@0.2.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|resolve-url@0.2.1|
+  >|**Version**|@0.2.1|
+  >|**Repository**|https://github.com/lydell/resolve-url|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Simon Lydell|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i resolve-url@0.2.1
+  ```
+  </details>
+<details>
   <summary>resolve@1.22.8</summary>
   
   #### Basic details about the package
@@ -7883,6 +10353,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i resolve@2.0.0-next.5
+  ```
+  </details>
+<details>
+  <summary>ret@0.1.15</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|ret@0.1.15|
+  >|**Version**|@0.1.15|
+  >|**Repository**|https://github.com/fent/ret.js|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Roly Fentanes|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/fent|
+  
+  #### Use this package in your project
+  ```bash
+  npm i ret@0.1.15
   ```
   </details>
 <details>
@@ -7962,6 +10451,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>safe-buffer@5.1.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|safe-buffer@5.1.2|
+  >|**Version**|@5.1.2|
+  >|**Repository**|https://github.com/feross/safe-buffer|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Feross Aboukhadijeh|
+  >|**Contact**|feross@feross.org|
+  >|**Homepage**|http://feross.org|
+  
+  #### Use this package in your project
+  ```bash
+  npm i safe-buffer@5.1.2
+  ```
+  </details>
+<details>
   <summary>safe-regex-test@1.0.0</summary>
   
   #### Basic details about the package
@@ -7978,6 +10486,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i safe-regex-test@1.0.0
+  ```
+  </details>
+<details>
+  <summary>safe-regex@1.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|safe-regex@1.1.0|
+  >|**Version**|@1.1.0|
+  >|**Repository**|https://github.com/substack/safe-regex|
+  >|**Licenses**|MIT|
+  >|**Publisher**|James Halliday|
+  >|**Contact**|mail@substack.net|
+  >|**Homepage**|http://substack.net|
+  
+  #### Use this package in your project
+  ```bash
+  npm i safe-regex@1.1.0
   ```
   </details>
 <details>
@@ -8095,6 +10622,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>set-value@2.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|set-value@2.0.1|
+  >|**Version**|@2.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/set-value|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i set-value@2.0.1
+  ```
+  </details>
+<details>
   <summary>shebang-command@2.0.0</summary>
   
   #### Basic details about the package
@@ -8152,6 +10698,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>slash@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|slash@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/sindresorhus/slash|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|http://sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i slash@1.0.0
+  ```
+  </details>
+<details>
   <summary>slash@2.0.0</summary>
   
   #### Basic details about the package
@@ -8206,6 +10771,139 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i slide@1.1.6
+  ```
+  </details>
+<details>
+  <summary>snapdragon-node@2.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|snapdragon-node@2.1.1|
+  >|**Version**|@2.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/snapdragon-node|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i snapdragon-node@2.1.1
+  ```
+  </details>
+<details>
+  <summary>snapdragon-util@3.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|snapdragon-util@3.0.1|
+  >|**Version**|@3.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/snapdragon-util|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i snapdragon-util@3.0.1
+  ```
+  </details>
+<details>
+  <summary>snapdragon@0.8.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|snapdragon@0.8.2|
+  >|**Version**|@0.8.2|
+  >|**Repository**|https://github.com/jonschlinkert/snapdragon|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i snapdragon@0.8.2
+  ```
+  </details>
+<details>
+  <summary>source-map-resolve@0.5.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|source-map-resolve@0.5.3|
+  >|**Version**|@0.5.3|
+  >|**Repository**|https://github.com/lydell/source-map-resolve|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Simon Lydell|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i source-map-resolve@0.5.3
+  ```
+  </details>
+<details>
+  <summary>source-map-support@0.4.18</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|source-map-support@0.4.18|
+  >|**Version**|@0.4.18|
+  >|**Repository**|https://github.com/evanw/node-source-map-support|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i source-map-support@0.4.18
+  ```
+  </details>
+<details>
+  <summary>source-map-url@0.4.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|source-map-url@0.4.1|
+  >|**Version**|@0.4.1|
+  >|**Repository**|https://github.com/lydell/source-map-url|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Simon Lydell|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i source-map-url@0.4.1
+  ```
+  </details>
+<details>
+  <summary>source-map@0.5.7</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|source-map@0.5.7|
+  >|**Version**|@0.5.7|
+  >|**Repository**|https://github.com/mozilla/source-map|
+  >|**Licenses**|BSD-3-Clause|
+  >|**Publisher**|Nick Fitzgerald|
+  >|**Contact**|nfitzgerald@mozilla.com|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i source-map@0.5.7
   ```
   </details>
 <details>
@@ -8342,6 +11040,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>split-string@3.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|split-string@3.1.0|
+  >|**Version**|@3.1.0|
+  >|**Repository**|https://github.com/jonschlinkert/split-string|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i split-string@3.1.0
+  ```
+  </details>
+<details>
+  <summary>static-extend@0.1.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|static-extend@0.1.2|
+  >|**Version**|@0.1.2|
+  >|**Repository**|https://github.com/jonschlinkert/static-extend|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i static-extend@0.1.2
+  ```
+  </details>
+<details>
   <summary>string-width@4.2.3</summary>
   
   #### Basic details about the package
@@ -8437,6 +11173,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>string_decoder@1.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|string_decoder@1.1.1|
+  >|**Version**|@1.1.1|
+  >|**Repository**|https://github.com/nodejs/string_decoder|
+  >|**Licenses**|MIT|
+  >|**Publisher**|NA|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i string_decoder@1.1.1
+  ```
+  </details>
+<details>
+  <summary>strip-ansi@3.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|strip-ansi@3.0.1|
+  >|**Version**|@3.0.1|
+  >|**Repository**|https://github.com/chalk/strip-ansi|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i strip-ansi@3.0.1
+  ```
+  </details>
+<details>
   <summary>strip-ansi@6.0.1</summary>
   
   #### Basic details about the package
@@ -8491,6 +11265,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i strip-json-comments@3.1.1
+  ```
+  </details>
+<details>
+  <summary>supports-color@2.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|supports-color@2.0.0|
+  >|**Version**|@2.0.0|
+  >|**Repository**|https://github.com/chalk/supports-color|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i supports-color@2.0.0
   ```
   </details>
 <details>
@@ -8627,6 +11420,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>to-fast-properties@1.0.3</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|to-fast-properties@1.0.3|
+  >|**Version**|@1.0.3|
+  >|**Repository**|https://github.com/sindresorhus/to-fast-properties|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i to-fast-properties@1.0.3
+  ```
+  </details>
+<details>
   <summary>to-fast-properties@2.0.0</summary>
   
   #### Basic details about the package
@@ -8646,6 +11458,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>to-object-path@0.3.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|to-object-path@0.3.0|
+  >|**Version**|@0.3.0|
+  >|**Repository**|https://github.com/jonschlinkert/to-object-path|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i to-object-path@0.3.0
+  ```
+  </details>
+<details>
+  <summary>to-regex-range@2.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|to-regex-range@2.1.1|
+  >|**Version**|@2.1.1|
+  >|**Repository**|https://github.com/micromatch/to-regex-range|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i to-regex-range@2.1.1
+  ```
+  </details>
+<details>
   <summary>to-regex-range@5.0.1</summary>
   
   #### Basic details about the package
@@ -8662,6 +11512,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i to-regex-range@5.0.1
+  ```
+  </details>
+<details>
+  <summary>to-regex@3.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|to-regex@3.0.2|
+  >|**Version**|@3.0.2|
+  >|**Repository**|https://github.com/jonschlinkert/to-regex|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i to-regex@3.0.2
   ```
   </details>
 <details>
@@ -8700,6 +11569,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i treeify@1.1.0
+  ```
+  </details>
+<details>
+  <summary>trim-right@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|trim-right@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/sindresorhus/trim-right|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i trim-right@1.0.1
   ```
   </details>
 <details>
@@ -9045,6 +11933,44 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>union-value@1.0.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|union-value@1.0.1|
+  >|**Version**|@1.0.1|
+  >|**Repository**|https://github.com/jonschlinkert/union-value|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i union-value@1.0.1
+  ```
+  </details>
+<details>
+  <summary>unset-value@1.0.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|unset-value@1.0.0|
+  >|**Version**|@1.0.0|
+  >|**Repository**|https://github.com/jonschlinkert/unset-value|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i unset-value@1.0.0
+  ```
+  </details>
+<details>
   <summary>update-browserslist-db@1.0.13</summary>
   
   #### Basic details about the package
@@ -9083,6 +12009,25 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>urix@0.1.0</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|urix@0.1.0|
+  >|**Version**|@0.1.0|
+  >|**Repository**|https://github.com/lydell/urix|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Simon Lydell|
+  >|**Contact**|NA|
+  >|**Homepage**|NA|
+  
+  #### Use this package in your project
+  ```bash
+  npm i urix@0.1.0
+  ```
+  </details>
+<details>
   <summary>use-sync-external-store@1.2.0</summary>
   
   #### Basic details about the package
@@ -9102,6 +12047,63 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
+  <summary>use@3.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|use@3.1.1|
+  >|**Version**|@3.1.1|
+  >|**Repository**|https://github.com/jonschlinkert/use|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Jon Schlinkert|
+  >|**Contact**|NA|
+  >|**Homepage**|https://github.com/jonschlinkert|
+  
+  #### Use this package in your project
+  ```bash
+  npm i use@3.1.1
+  ```
+  </details>
+<details>
+  <summary>user-home@1.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|user-home@1.1.1|
+  >|**Version**|@1.1.1|
+  >|**Repository**|https://github.com/sindresorhus/user-home|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Sindre Sorhus|
+  >|**Contact**|sindresorhus@gmail.com|
+  >|**Homepage**|http://sindresorhus.com|
+  
+  #### Use this package in your project
+  ```bash
+  npm i user-home@1.1.1
+  ```
+  </details>
+<details>
+  <summary>util-deprecate@1.0.2</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|util-deprecate@1.0.2|
+  >|**Version**|@1.0.2|
+  >|**Repository**|https://github.com/TooTallNate/util-deprecate|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Nathan Rajlich|
+  >|**Contact**|nathan@tootallnate.net|
+  >|**Homepage**|http://n8.io/|
+  
+  #### Use this package in your project
+  ```bash
+  npm i util-deprecate@1.0.2
+  ```
+  </details>
+<details>
   <summary>util-extend@1.0.3</summary>
   
   #### Basic details about the package
@@ -9118,6 +12120,25 @@ This file lists the third-party libraries, frameworks, and other components used
   #### Use this package in your project
   ```bash
   npm i util-extend@1.0.3
+  ```
+  </details>
+<details>
+  <summary>v8flags@2.1.1</summary>
+  
+  #### Basic details about the package
+  >|Key|Value|
+  >|:--|:--|
+  >|**Name**|v8flags@2.1.1|
+  >|**Version**|@82.1.1|
+  >|**Repository**|https://github.com/tkellen/node-v8flags|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Tyler Kellen|
+  >|**Contact**|NA|
+  >|**Homepage**|http://goingslowly.com/|
+  
+  #### Use this package in your project
+  ```bash
+  npm i v8flags@2.1.1
   ```
   </details>
 <details>
