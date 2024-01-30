@@ -7,7 +7,7 @@ on:
     inputs:
       version_type:
         type: choice
-        description: Who to greet
+        description: Choose version bump type
         options: 
         - major
         - minor
