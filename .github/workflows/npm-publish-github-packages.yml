@@ -37,9 +37,7 @@ jobs:
 
       - name: Set repo names output
         id: set-matrix
-        run: |
-          #echo "::set-output name=matrix::{\"repo_names\":[\"core\",\"styles\"]}"
-          echo "::set-output name=matrix::{\"repo_names\":[${{env.input_repos}}]}"
+        run: echo "::set-output name=matrix::{\"repo_names\":[${{env.input_repos}}]}"
       - name: Echo repos_names
         run: echo ${{ steps.set-matrix.outputs.matrix}}
 
@@ -78,7 +76,7 @@ jobs:
             from: Wrappid Care
             to: ${{secrets.IDS}}
             cc: ${{secrets.MAINTAINER_ID}}
-            subject: No new commits since the last publish.
+            subject: No new commits in ${{ github.event.repository.name }} since the last publish.
             body: |
               Hi Wrappid Managers,
 
@@ -137,26 +135,10 @@ jobs:
     needs: [job2,check_repository_status]
     if: always() && needs.job2.result == 'success'
     permissions: write-all
-#     outputs:
-#       ${{matrix.repo_names}}_result: ${{steps.lsdir.outputs.test}}
-    # env:
-    #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     
     
       - name: Checkout ${{ github.event.repository.name }}
-        uses: actions/checkout@v3
-      
-      - name: Delete scripts from ${{ matrix.repo_names }}
-        run: |
-          pwd
-          cd .github
-          pwd
-          ls -al scripts
-          rm -rf scripts
-          ls -al
-
-      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node Env
@@ -187,7 +169,7 @@ jobs:
       
       # - name: Create Release
       #   id: create_release
-      #   run: bash .github/scripts/create_release.sh ${{secrets.GITHUB_TOKEN}} ${{ matrix.repo_names }} ${{ steps.extract_version.outputs.version }}
+      #   run: bash .github/scripts/create_release.sh ${{secrets.GITHUB_TOKEN}} ${{ github.event.repository.name }} ${{ steps.extract_version.outputs.version }}
 
       - name: setup gh
         run: echo ${{secrets.GITHUB_TOKEN}} | gh auth login --with-token
@@ -204,19 +186,14 @@ jobs:
          bash ./.github/scripts/release_notes.sh ${{ github.event.repository.name }}
 
 
-# Release not releasing with proper name
-      - name: Create Release
-        id: create_release
-        run: |
-          gh config set prompt disabled
-          gh release create v${{ steps.extract_version.outputs.version }} -R wrappid/${{ github.event.repository.name }} --notes-file RELEASE_NOTES.md --title "v${{ steps.extract_version.outputs.version }}"
+      - name: Install zip
+        run: sudo apt install zip -y
 
-        # uses: softprops/action-gh-release@v1
-        # with:
-        #   tag_name: v${{ steps.extract_version.outputs.version }}
-        #   token: ${{ secrets.PAT }}
-        # env:
-        #   GITHUB_REPOSITORY: wrappid/${{ matrix.repo_names }}
+      - name: Zip build
+        run: |
+          cd dist
+          zip -r ${{ github.event.repository.name }}-v${{ steps.extract_version.outputs.version }}.zip *
+
 
         
       - name: Install node modules
@@ -234,11 +211,44 @@ jobs:
       - name: Check Build
         run: npm run build
 
-        ##publish
+      - name: Create package
+        run: npm pack dist/
+
       - name: Publish
         run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_TOKEN}}
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.extract_version.outputs.version }}
+          release_name: v${{ steps.extract_version.outputs.version }}
+          body_path: ./RELEASE_NOTES.md
+          draft: false
+          prerelease: false
+
+      - name: Find TGZ file
+        id: find-file
+        run: |
+          # Find the generated TGZ file in the dist folder
+          TGZ_FILE=$(find . -name "*.tgz")
+          echo "Found TGZ file: $TGZ_FILE"
+          echo "::set-output name=tgz_file::$TGZ_FILE"
+          
+      - name: Upload Release Asset npm zip file
+        id: upload-package-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ${{ steps.find-file.outputs.tgz_file }}
+          asset_name: ${{ steps.find-file.outputs.tgz_file }}
+          asset_content_type: application/x-gzip
 
       - name: Bump Version
         id: bump-version
@@ -261,14 +271,22 @@ jobs:
         run: |
           git pull
           git add ATTRIBUTIONS.md
-          git commit -m "docs(global): :memo: update attribution" -m "update attributions content" -m "by Publish CI"
+          git commit -m "docs(global): :memo: update attribution
+
+          update attributions content
+
+          by Publish CI"
             
       - name: commit
         run: |
           # Pull, stage the file, commit and push
           git pull
           git add package.json package/package.json
-          git commit -m "${{steps.bump-version.outputs.commit_message}}"
+          git commit -m "ci:${{steps.bump-version.outputs.commit_message}}
+
+          created new release, and published new npm package
+
+          by Publish CI"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -284,7 +302,7 @@ jobs:
             from: Wrappid Care
             to: ${{secrets.IDS}}
             cc: ${{secrets.MAINTAINER_ID}}
-            subject: Published - ${{ matrix.repo_names }} - ${{ steps.extract_version.outputs.version }} Package. 🚀
+            subject: Published - ${{ github.event.repository.name }} - ${{ steps.extract_version.outputs.version }} Package. 🚀
 
             html_body: |
               <html lang="en">
@@ -299,9 +317,9 @@ jobs:
                 <p>Hi Wrappiders,</p>
 
                 <p>We have some exciting news to share with you! 🎉<br>
-                  We have published a new version of our ${{ matrix.repo_names }}, ${{ steps.extract_version.outputs.version }}. 🚀<br>
+                  We have published a new version of our ${{ github.event.repository.name }}, ${{ steps.extract_version.outputs.version }}. 🚀<br>
                   This version comes with some amazing new features and improvements that will make your experience with our package even better.
-                  You can check out the details on our <a href="https://github.com/wrappid/${{ matrix.repo_names }}/releases/latest">${{ matrix.repo_names }} page</a>.
+                  You can check out the details on our <a href="https://github.com/wrappid/${{ github.event.repository.name }}/releases/latest">${{ github.event.repository.name }} page</a>.
                 </p>
 
                 <p>We hope you enjoy using our framework, and we would love to hear your feedback.

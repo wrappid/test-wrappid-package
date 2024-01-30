@@ -1,12 +1,12 @@
 {
-  "name": "@wrappid/components",
+  "name": "@wrappid/test-wrappid-package",
   "version": "0.0.11",
-  "description": "Multi platform app components package",
+  "description": "test-package",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wrappid/components.git"
+    "url": "git+https://github.com/wrappid/test-wrappid-package.git"
   },
   "keywords": [
     "wrappid",

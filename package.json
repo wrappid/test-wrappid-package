@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wrappid/components.git"
+    "url": "git+https://github.com/wrappid/test-wrappid-package.git"
   },
   "keywords": [
     "wrappid",
@@ -34,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "@wrappid/test-wrappid-package": "file:wrappid-test-wrappid-package-0.0.11.tgz",
     "formik": "^2.2.9",
     "moment": "^2.29.4",
     "react": "^18.2.0",
