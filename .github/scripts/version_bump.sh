@@ -27,7 +27,7 @@ for PACKAGE_JSON_PATH in "${PACKAGE_JSON_PATHS[@]}"; do
     "minor") MINOR=$((MINOR + 1)); PATCH=0; HOTFIX=0; [ "$INCLUDE_BUILD_NUMBER" == true ] && BUILD_NUMBER=0 ;;
     "patch") PATCH=$((PATCH + 1)); HOTFIX=0; [ "$INCLUDE_BUILD_NUMBER" == true ] && BUILD_NUMBER=0 ;;
     "hotfix") HOTFIX=$((HOTFIX + 1)); [ "$INCLUDE_BUILD_NUMBER" == true ] && BUILD_NUMBER=0 ;;
-    "buildnumber") [ "$INCLUDE_BUILD_NUMBER" == true ] && BUILD_NUMBER=$((BUILD_NUMBER + 1)) ;;
+    "build") [ "$INCLUDE_BUILD_NUMBER" == true ] && BUILD_NUMBER=$((BUILD_NUMBER + 1)) ;;
     *) echo "Invalid VERSION_TYPE"; exit 1 ;;
   esac
 
