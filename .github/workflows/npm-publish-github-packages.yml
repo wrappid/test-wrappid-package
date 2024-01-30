@@ -120,12 +120,6 @@ jobs:
         run: |
           ls -l
 
-      - run: |
-         rm -rf .husky
-         npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
-
       - name: Testing build ${{ github.event.repository.name }}
         run: npm run build
 
