@@ -1,6 +1,6 @@
 {
   "name": "@wrappid/test-wrappid-package",
-  "version": "1.0.1-alpha.0",
+  "version": "2.0.0",
   "description": "test-package",
   "main": "index.js",
   "scripts": {},
