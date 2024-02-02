@@ -91,7 +91,7 @@ jobs:
 
           update attributions content
 
-          by Publish CI""
+          by Publish CI"
 
       - name: Change version
         run:  npm run release -- ${{ steps.release-type.outputs.version_type}}
