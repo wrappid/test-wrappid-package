@@ -72,7 +72,7 @@ jobs:
 
     - name: Create Release
       id: create_release
-      run: gh release create ${{ steps.latest-tag.outputs.tag }} --target ${{ steps.latest-tag.outputs.tag }} development *.tgz --title ${{ steps.latest-tag.outputs.tag }}
+      run: gh release create ${{ steps.latest-tag.outputs.tag }} *.tgz --title ${{ steps.latest-tag.outputs.tag }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
