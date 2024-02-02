@@ -47,9 +47,11 @@ jobs:
     - name: Get tags
       run: git fetch --tags origin
 
-    # - name: Get latest tag
-    #   id: latest-tag
-    #   run: echo "::set-output name=tag::$(git describe --tags $(git rev-list --tags --max-count=1)"
+    - name: Get latest tag
+      id: latest-tag
+      run: |
+        git describe --tags $(git rev-list --tags --max-count=1) > output.txt
+        echo "::set-output name=tag::$(cat output.txt)"
 
     - name: Show tag
       run: echo ${{ steps.latest-tag.outputs.tag }}
@@ -68,7 +70,7 @@ jobs:
 
     - name: Create Release
       id: create_release
-      run: gh release create $(git describe --tags $(git rev-list --tags --max-count=1) *.tgz --title $(git describe --tags $(git rev-list --tags --max-count=1)
+      run: gh release create ${{ steps.latest-tag.outputs.tag }} *.tgz --title ${{ steps.latest-tag.outputs.tag }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
