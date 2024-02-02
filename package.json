@@ -1,6 +1,6 @@
 {
   "name": "@wrappid/test-wrappid-package",
-  "version": "0.0.13",
+  "version": "0.0.16",
   "description": "test-package",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "code:format": "npm run code:lint --fix ./package",
     "test": "exit 0",
     "build": "npx babel package --out-dir dist --copy-files",
-    "publish": "npm publish ./dist --registry=https://npm.pkg.github.com --scope=@wrappid"
+    "publish": "npm publish *.tgz --registry=https://npm.pkg.github.com --scope=@wrappid",
+    "release": "standard-version --bumpFiles ./package.json ./package/package.json ./package-lock.json ./package/package-lock.json"
   },
   "repository": {
     "type": "git",
@@ -56,6 +57,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "license-checker": "^25.0.1"
+    "license-checker": "^25.0.1",
+    "standard-version": "^9.5.0"
   }
 }
