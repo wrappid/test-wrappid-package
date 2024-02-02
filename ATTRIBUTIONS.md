@@ -2946,13 +2946,13 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
-  <summary>@wrappid/test-wrappid-package@0.1.0</summary>
+  <summary>@wrappid/test-wrappid-package@1.0.0</summary>
   
   #### Basic details about the package
   >|Key|Value|
   >|:--|:--|
-  >|**Name**|@wrappid/test-wrappid-package@0.1.0|
-  >|**Version**|@0.1.0|
+  >|**Name**|@wrappid/test-wrappid-package@1.0.0|
+  >|**Version**|@1.0.0|
   >|**Repository**|https://github.com/wrappid/test-wrappid-package|
   >|**Licenses**|UNKNOWN|
   >|**Publisher**|wrappid|
@@ -2961,7 +2961,7 @@ This file lists the third-party libraries, frameworks, and other components used
   
   #### Use this package in your project
   ```bash
-  npm i @wrappid/test-wrappid-package@0.1.0
+  npm i @wrappid/test-wrappid-package@1.0.0
   ```
   </details>
 <details>
