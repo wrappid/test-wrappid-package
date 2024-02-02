@@ -44,6 +44,9 @@ jobs:
     # - name: Display release notes
     #   run: echo "${{ steps.release.outputs.release_notes }}"
     
+    - name: Checkout Development
+      run: git checkout development
+
     - name: Get tags
       run: git fetch --tags origin
 
