@@ -1,9 +1,10 @@
 {
-  "name": "@wrappid/components",
-  "version": "0.0.7",
-  "description": "Multi platform app components package",
+  "name": "@wrappid/test-wrappid-package",
+  "version": "0.0.13",
+  "description": "test-package",
   "main": "index.js",
   "scripts": {
+    "attributions:gen": "node ./scripts/attributions.gen.js",
     "code:lint": "eslint --ignore-path .gitignore ./package",
     "code:format": "npm run code:lint --fix ./package",
     "test": "exit 0",
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wrappid/components.git"
+    "url": "git+https://github.com/wrappid/test-wrappid-package.git"
   },
   "keywords": [
     "wrappid",
@@ -48,11 +49,13 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@reduxjs/toolkit": "^1.9.1",
+    "babel-cli": "^6.26.0",
     "eslint": "^8.40.0",
     "eslint-plugin-etc": "^2.0.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "license-checker": "^25.0.1"
   }
 }

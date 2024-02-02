@@ -1,102 +1,262 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Publish Package
+name: Package Publish - CI/CD
 
 on:
-#   release:
-#     types: [created]
+ # schedule:
+ #   - cron: "30 8 * * *"
   workflow_dispatch:
-  repository_dispatch:
-
+    inputs:
+      version_type:
+        type: choice
+        description: Choose version bump type
+        options: 
+        - major
+        - minor
+        - patch
+        - hotfix
+        - build
+        required: true
+        default: "build"
 jobs:
-  build:
+  check_repository_status:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
-
-  release_publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions: write-all
     outputs:
-      version: ${{ steps.extract_version.outputs.version }}
+      repo_stat: ${{ steps.set-repo_stat.outputs.repo_stat }}
       date: ${{ steps.date.outputs.date }}
-#       contents: read
-#       packages: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      ##publish
-      - name: Extract version
-        id: extract_version
-        uses: Saionaro/extract-package-version@v1.0.6
-      
-      - name: Print version
-        run: echo ${{ steps.extract_version.outputs.version }}
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Change script permission
+        run: chmod +x ./.github/scripts/repo_commit_message_check.sh
+
+      - name: setup gh
+        run: echo ${{secrets.GITHUB_TOKEN}} | gh auth login --with-token
+
+      - name: Repo commit message check
+        id: repo-commit-message-check
+        run: | 
+         bash ./.github/scripts/repo_commit_message_check.sh ${{ github.event.repository.name }}
+         ls -al
+         echo "repo_list_to_publish=$(tail -n 1 without_bump_version.txt)" >> "$GITHUB_OUTPUT"
+         echo "repo_list_dont_publish=$(tail -n 1 with_bump_version.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate output json
+        id: generate
+        run: |
+           input_repos=$(echo "${{steps.repo-commit-message-check.outputs.repo_list_to_publish}}" | sed 's/[^, ]\+/\\\"&\\\"/g')
+           echo "input_repos=$input_repos" >> "$GITHUB_ENV"
+
+      - name: Set repo names output
+        id: set-matrix
+        run: echo "::set-output name=matrix::{\"repo_names\":[${{env.input_repos}}]}"
+      - name: Echo repos_names
+        run: echo ${{ steps.set-matrix.outputs.matrix}}
+
+      # - name: Echo only repo names array
+      #   run: ${{ toJSON(fromJSON(steps.set-matrix.outputs.matrix).repo_names) }}
+
+      - name: Set repo_stat
+        id: set-repo_stat
+        run: |
+         if [ "$(expr length "${{ toJSON(fromJSON(steps.set-matrix.outputs.matrix).repo_names) }}")" -eq "$(expr length "${{ toJSON(fromJSON('[]')) }}")" ]; then
+            echo "::set-output name=repo_stat::failed"
+          else
+            echo "::set-output name=repo_stat::success"
+          fi
+
+      - name: Echo repo stat
+        run: echo ${{ steps.set-repo_stat.outputs.repo_stat }}
 
       - name: Get current IST date
         id: date
-        run: echo "::set-output name=date::$(TZ='Asia/Kolkata' date +'%d %B %y')"
+        run: echo "::set-output name=date::$(TZ='Asia/Kolkata' date +'%d %B %y %T')"
+        
+      - name: Read with_bump_version file content
+        id: read-with-bump-version-file
+        run: echo "::set-output name=file_content::$(cat with_bump_version.txt)"
+
+      - name: Send mail
+        if: ${{ steps.read-with-bump-version-file.outputs.file_content != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+            server_address: smtp.gmail.com
+            server_port: 465
+            username: ${{secrets.MAIL_USERNAME}}
+            password: ${{secrets.MAIL_PASSWORD}}
+            secure: true
+            from: Wrappid Care
+            to: ${{secrets.IDS}}
+            cc: ${{secrets.MAINTAINER_ID}}
+            subject: No new commits in ${{ github.event.repository.name }} since the last publish.
+            body: |
+              Hi Wrappid Managers,
+
+              There were no new commits since the last publish in ${{steps.repo-commit-message-check.outputs.repo_list_dont_publish}} package repositories as of ${{ steps.date.outputs.date }}. Therefore, no release or publish is needed.
+              
+              Thank you for your attention and cooperation.
+
+              Thanks and Regards,
+              wrappidcare
+
+              generated by fast-publish github action workflow
+            # html_body: file://packagename_version.txt
+            ignore_cert: true
+            convert_markdown: true
+            # attachments: attachments.zip,git.diff
+            priority: normal
+  job2:
+    name: test-build
+    runs-on: ubuntu-latest
+    needs: [check_repository_status]
+    if: needs.check_repository_status.outputs.repo_stat == 'success'
+    permissions: write-all
+
+    steps:
+      - name: Checkout ${{ github.event.repository.name }}
+        uses: actions/checkout@v3
+
+          
+      - name: Setup Node Env
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/wrappid
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ github.event.repository.name }}
+          NODE_AUTH_TOKEN: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
+
+      - name: List Directories
+        id: lsdir
+        run: |
+          ls -l
+
+      - name: Install node modules
+        run: npm ci
+
+      - name: Testing build ${{ github.event.repository.name }}
+        run: npm run build
+
+  job3:
+    name: checkout-build-publish
+    runs-on: ubuntu-latest
+    needs: [job2,check_repository_status]
+    if: always() && needs.job2.result == 'success'
+    permissions: write-all
+    steps:
+    
+    
+      - name: Checkout ${{ github.event.repository.name }}
+        uses: actions/checkout@v3
+
+      - name: Setup Node Env
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/wrappid
+          token: ${{secrets.PUBLISH_TOKEN}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path:  ${{ github.event.repository.name }}
+          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_TOKEN}}
+
+      - name: List Directories
+        id: lsdir
+        run: |
+          ls -l
+
+      - name: Extract version
+        id: extract_version
+        run: |
+          echo "version=$(jq -r .version package.json)" >> "$GITHUB_OUTPUT"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print version
+        run: echo ${{ steps.extract_version.outputs.version }}
+      
+      # - name: Create Release
+      #   id: create_release
+      #   run: bash .github/scripts/create_release.sh ${{secrets.GITHUB_TOKEN}} ${{ github.event.repository.name }} ${{ steps.extract_version.outputs.version }}
+
+      - name: setup gh
+        run: echo ${{secrets.GITHUB_TOKEN}} | gh auth login --with-token
 
       - name: Get tags
         run: git fetch --tags origin
 
       - name: Create tag
         run: git tag v${{ steps.extract_version.outputs.version }} && git push origin v${{ steps.extract_version.outputs.version }}
-      
+        
       - name: Generate Release notes
-        run: bash .github/scripts/release_notes.sh
-     
+        run: |
+         chmod +x ./.github/scripts/release_notes.sh
+         bash ./.github/scripts/release_notes.sh ${{ github.event.repository.name }}
+
+        
+      - name: Install node modules
+        run: |
+         rm -rf .husky
+         npm ci
+
+
+      - name: Generate ATTRIBUTIONS.md
+        run: |
+         npm run attributions:gen
+         chmod +x ./.github/scripts/attribution_header_adder.sh
+         bash ./.github/scripts/attribution_header_adder.sh ${{ github.event.repository.name }}
+
+      - name: Check Build
+        run: npm run build
+
+      - name: Create package
+        run: npm pack dist/
+
+      - name: Publish
+        run: npm run publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_TOKEN}}
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.extract_version.outputs.version }}
           release_name: v${{ steps.extract_version.outputs.version }}
-          #artifacts: "release-v-${{ steps.extract_version.outputs.version }}.zip"
           body_path: ./RELEASE_NOTES.md
           draft: false
           prerelease: false
-      
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
 
-        ##publish
-      - name: Publish
-        run: npm run publish
+
+      - name: Find TGZ file name
+        id: find-tgz-file-name
+        run: |
+          # Find the generated TGZ file in the dist folder
+          TGZ_FILE=$(find . -name "*.tgz" | sed 's|^\./||')
+          echo "Found TGZ file: $TGZ_FILE"
+          echo "::set-output name=tgz_file::$TGZ_FILE"
+
+          
+      - name: Upload Release Asset npm zip file
+        id: upload-package-release-asset 
+        uses: actions/upload-release-asset@v1
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-#new config by Ananta
-  version-bump:
-    needs: release_publish-gpr
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ./${{ steps.find-tgz-file-name.outputs.tgz_file }}
+          asset_name: ${{ steps.find-tgz-file-name.outputs.tgz_file }}
+          asset_content_type: application/x-gzip
 
       - name: Bump Version
         id: bump-version
-        run: echo "commit_message=$(bash .github/scripts/version_bump.sh)" >> "$GITHUB_OUTPUT"
+        run: echo "commit_message=$(bash .github/scripts/version_bump.sh ${{ github.event.inputs.version_type }})" >> "$GITHUB_OUTPUT"
         # env:
         #   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: setup git config
@@ -104,37 +264,77 @@ jobs:
           # setup the username and email.
           git config user.name "WRAPPID"
           git config user.email "wrappid.framework@gmail.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: commit attribuitions
+        run: |
+          git pull
+          git add ATTRIBUTIONS.md
+          git commit -m "docs(global): :memo: update attribution
+
+          update attributions content
+
+          by Publish CI"
+            
       - name: commit
         run: |
           # Pull, stage the file, commit and push
           git pull
           git add package.json package/package.json
-          git commit -m "${{steps.bump-version.outputs.commit_message}}"
+          git commit -m "ci:${{steps.bump-version.outputs.commit_message}}
+
+          created new release, and published new npm package
+
+          by Publish CI"
           git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
-              server_address: ${{secrets.S_ADDR}}
-              server_port: ${{secrets.S_PORT}}
-              username: ${{secrets.MAIL_USERNAME}}
-              password: ${{secrets.MAIL_PASSWORD}}
-              secure: true
-              from: Wrappid Care
-              to: ${{secrets.IDS}}
-              cc: ${{secrets.MAINTAINER_ID}}
-              subject: Manually Published - components - ${{ needs.release_publish-gpr.outputs.version }} Package on ${{ needs.release_publish-gpr.outputs.date }}.
-              body: |
-                Hi Wrappiders,
+            server_address: smtp.gmail.com
+            server_port: 465
+            username: ${{secrets.MAIL_USERNAME}}
+            password: ${{secrets.MAIL_PASSWORD}}
+            secure: true
+            from: Wrappid Care
+            to: ${{secrets.IDS}}
+            cc: ${{secrets.MAINTAINER_ID}}
+            subject: Published - ${{ github.event.repository.name }} - ${{ steps.extract_version.outputs.version }} Package. 🚀
 
-                We have released ${{ needs.release_publish-gpr.outputs.version }} version of components package.
+            html_body: |
+              <html lang="en">
 
-                Thanks and Regards,
-                ${{github.actor}}
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Exciting News from Wrappiders</title>
+              </head>
 
-              # html_body: file://packagename_version.txt
-              ignore_cert: true
-              convert_markdown: true
-              # attachments: attachments.zip,git.diff
-              priority: normal
+              <body>
+                <p>Hi Wrappiders,</p>
+
+                <p>We have some exciting news to share with you! 🎉<br>
+                  We have published a new version of our ${{ github.event.repository.name }}, ${{ steps.extract_version.outputs.version }}. 🚀<br>
+                  This version comes with some amazing new features and improvements that will make your experience with our package even better.
+                  You can check out the details on our <a href="https://github.com/wrappid/${{ github.event.repository.name }}/releases/latest">${{ github.event.repository.name }} page</a>.
+                </p>
+
+                <p>We hope you enjoy using our framework, and we would love to hear your feedback.
+                  Please feel free to <a href="mailto:wrappid.framework@gmail.com">contact us</a> if you have any questions or suggestions.
+                </p>
+
+                <p>Thank you for your continued support and trust in us. 😊</p>
+
+                <p>Thanks and Regards,<br>
+                  ${{github.actor}}<br>
+                  (Generated by the fast-publish GitHub Action workflow)</p>
+              </body>
+
+              </html>
+            ignore_cert: true
+            convert_markdown: true
+            # attachments: attachments.zip,git.diff
+            priority: normal
