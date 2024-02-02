@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.2.0-build.0 (2024-02-02)
+
+
+### Features
+
+* config ([0d19be1](https://github.com/wrappid/test-wrappid-package/commit/0d19be1170db50a750401d195ba0861448eafbd9))
+
 ## 2.1.0 (2024-02-02)
 
 
