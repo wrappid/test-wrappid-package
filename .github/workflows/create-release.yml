@@ -24,6 +24,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@master
+      with:
+        ref: development
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
@@ -44,9 +46,6 @@ jobs:
     # - name: Display release notes
     #   run: echo "${{ steps.release.outputs.release_notes }}"
     
-    - name: Checkout Development
-      run: git checkout development
-
     - name: Get tags
       run: git fetch --tags origin
 
