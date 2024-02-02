@@ -63,7 +63,7 @@ jobs:
 ## add test
 
     - name: Create Package
-    - run: npm pack ./dist/
+      run: npm pack ./dist/
 
 
     - name: Create Release
