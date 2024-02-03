@@ -9,7 +9,11 @@ env:
 jobs:
   create_and_merge_pr:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
