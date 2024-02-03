@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.6.0 (2024-02-03)
+
+
+### Bug Fixes
+
+* :wrench: email config ([45e3f11](https://github.com/wrappid/test-wrappid-package/commit/45e3f11a2c05865422ac14188c3719de8162f966))
+
 ## 2.5.0 (2024-02-03)
 
 ### 2.4.3 (2024-02-03)
