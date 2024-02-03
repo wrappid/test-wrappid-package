@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
     branches:
       - development
-
+env:
+  GH_TOKEN: ${{ github.token }}
 jobs:
   create_and_merge_pr:
     runs-on: ubuntu-latest
