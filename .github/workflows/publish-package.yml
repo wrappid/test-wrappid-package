@@ -1,4 +1,4 @@
-name: Rxefy - WEB - Stage Deploy and Notify CI
+name: Publish Package
 
 on:
   workflow_dispatch:
@@ -9,13 +9,6 @@ on:
     types:
       - completed
   repository_dispatch:
-
-  # schedule:
-  #   - cron: "30 17 * * *"
-      # Every day 1 AM IST
-
-    # - cron: "30 17  * * 1,2,3,4,5" 
-    # 1 AM IST - Tues, Wed, Thurs, Fri, Sat
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,9 +25,7 @@ jobs:
       
       - name: get release
         run: |
-          mkdir build && cd build
           gh release download --pattern '*.tgz'
-          - name: Setup Node Env
 
       - name: Setup node
         uses: actions/setup-node@v3
