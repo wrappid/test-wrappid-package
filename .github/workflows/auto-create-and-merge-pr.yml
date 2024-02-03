@@ -1,0 +1,37 @@
+name: Auto Create and Merge PR
+
+on:
+  workflow_dispatch:
+    branches:
+      - development
+
+jobs:
+  create_and_merge_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ref: development
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git fetch origin main:main
+        changes=$(git diff --name-only main..development)
+
+        if [ -z "$changes" ]; then
+          echo "No changes detected. Exiting."
+          exit 0
+        fi
+
+    - name: Create PR
+      run: |
+        pr_url=$(gh pr create --base main --head development --title "Automated PR" --body "Automated PR created by GitHub Actions." --json number --silent)
+        echo "PR URL: $pr_url"
+
+    - name: Merge PR
+      run: |
+        pr_number=$(echo $pr_url | jq -r .number)
+        gh pr merge $pr_number --auto --delete-branch
