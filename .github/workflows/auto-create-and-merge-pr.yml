@@ -28,10 +28,10 @@ jobs:
 
     - name: Create PR
       run: |
-        pr_url=$(gh pr create --base main --head development --title "Automated PR" --body "Automated PR created by GitHub Actions." --json number --silent)
+        pr_url=$(gh pr create --base main --head development --title "Automated PR" --body "Automated PR created by GitHub Actions." | awk '/created/ {print $5}')
         echo "PR URL: $pr_url"
 
     - name: Merge PR
       run: |
-        pr_number=$(echo $pr_url | jq -r .number)
-        gh pr merge $pr_number --auto --delete-branch
+        pr_number=$(echo $pr_url | cut -d '/' -f 7)
+        gh pr merge $pr_number --auto
