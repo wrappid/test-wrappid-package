@@ -15,7 +15,7 @@ on:
 jobs:        
   call-create-app-release:
     permissions: write-all
-    uses: wrappid/workflows/.github/workflows/util-create-package-release.yml@main
+    uses: wrappid/workflows/.github/workflows/util-create-package-release.yml@development
     with:
       GIT_USER_NAME: ${{ vars.GIT_USER_NAME }}
       EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
