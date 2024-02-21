@@ -13,9 +13,9 @@ on:
   repository_dispatch:
 
 jobs:        
-  call-create-app-release:
+  call-create-package-release:
     permissions: write-all
-    uses: wrappid/workflows/.github/workflows/util-create-package-release.yml@development
+    uses: wrappid/workflows/.github/workflows/util-create-package-release.yml@main
     with:
       GIT_USER_NAME: ${{ vars.GIT_USER_NAME }}
       EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
